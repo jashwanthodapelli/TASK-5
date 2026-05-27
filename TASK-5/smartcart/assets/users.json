@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "Demo Admin",
+        "email": "admin@smartcart.dev",
+        "password": "$2y$10$0G9bWiDnXg4Bga.nXw21KeLLin.hYurDNlBbaOHBB2jajRD4HNl\/C",
+        "role": "admin",
+        "created_at": "2026-05-25T16:51:48+02:00"
+    }
+]

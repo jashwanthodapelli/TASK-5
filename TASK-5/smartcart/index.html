@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmartCart is a premium responsive e-commerce showcase built with HTML, CSS, JavaScript, and PHP.">
+  <title>SmartCart | Premium Shopping Experience</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="SmartCart logo"><span>SmartCart</span></a>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-theme-toggle title="Toggle theme">&#9680;</button>
+        <a class="icon-btn" href="cart.html" title="Cart">&#128722;<span class="cart-count" data-cart-count>0</span></a>
+        <a class="btn small" href="login.html">Login</a>
+        <button class="icon-btn hamburger" data-nav-toggle title="Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow reveal">Future-ready commerce</span>
+          <h1 class="reveal">Shop smarter with <span class="gradient-text">SmartCart</span></h1>
+          <p class="reveal">A polished full-stack e-commerce experience with dynamic products, responsive design, cart persistence, authentication, admin tooling, and smooth modern interactions.</p>
+          <div class="hero-actions reveal">
+            <a class="btn" href="products.html">Explore products</a>
+            <a class="btn secondary" href="#trending">View trending</a>
+          </div>
+          <div class="hero-stats reveal">
+            <div class="stat glass"><strong>25K+</strong><span>Happy shoppers</span></div>
+            <div class="stat glass"><strong>4.9</strong><span>Average rating</span></div>
+            <div class="stat glass"><strong>2-day</strong><span>Fast delivery</span></div>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="hero-card main glass"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80" alt="Modern e-commerce shopping" loading="lazy"></div>
+          <div class="floating-card glass">
+            <div class="mini-row">
+              <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=400&q=80" alt="Smart watch" loading="lazy">
+              <div><strong>PulseFit Watch</strong><p class="muted">Flash deal unlocked</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="eyebrow">Categories</span><h2>Curated departments</h2></div><p>Clean category cards, practical browsing, and polished hover states for a portfolio-ready storefront.</p></div>
+        <div class="category-grid">
+          <a class="category-card reveal" href="products.html"><div class="category-icon">&#9889;</div><h3>Electronics</h3><p class="muted">Smart everyday tech.</p></a>
+          <a class="category-card reveal" href="products.html"><div class="category-icon">&#9671;</div><h3>Fashion</h3><p class="muted">Minimal premium essentials.</p></a>
+          <a class="category-card reveal" href="products.html"><div class="category-icon">&#8962;</div><h3>Home</h3><p class="muted">Designed living upgrades.</p></a>
+          <a class="category-card reveal" href="products.html"><div class="category-icon">&#10022;</div><h3>Accessories</h3><p class="muted">Smart finishing touches.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trending">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="eyebrow">Trending</span><h2>Products people love</h2></div><a class="btn secondary" href="products.html">View all</a></div>
+        <div class="product-grid" data-trending></div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container">
+        <div class="sale-band reveal">
+          <div><span class="eyebrow">Flash sale</span><h2>Premium picks up to 40% off</h2><p>Countdown UI, bold campaign band, and a smooth conversion path into checkout.</p><div class="timer" data-countdown></div><a class="btn" href="products.html">Shop deals</a></div>
+          <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=900&q=80" alt="Flash sale products" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><div><span class="eyebrow">Reviews</span><h2>Trusted shopping feel</h2></div></div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><p>"SmartCart feels like a real product launch, not a student template."</p><div class="avatar-row"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=180&q=80" alt=""><strong>Aisha Rao</strong></div></article>
+          <article class="testimonial-card reveal"><p>"The filters, cart, admin panel, and theme toggle make it demo beautifully."</p><div class="avatar-row"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=180&q=80" alt=""><strong>Ryan Cole</strong></div></article>
+          <article class="testimonial-card reveal"><p>"Responsive details are sharp. It looks strong on phone and desktop."</p><div class="avatar-row"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=180&q=80" alt=""><strong>Maya Kim</strong></div></article>
+          <article class="testimonial-card reveal"><p>"A recruiter can quickly see frontend, backend, and product thinking."</p><div class="avatar-row"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=180&q=80" alt=""><strong>Dev Shah</strong></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container newsletter glass reveal">
+        <div><span class="eyebrow">Newsletter</span><h2>Get product drops first</h2><p class="muted">A polished subscription form with validation-ready markup and toast feedback.</p></div>
+        <form data-newsletter><input class="field" type="email" placeholder="Email address" required><button class="btn" type="submit">Subscribe</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="SmartCart logo"><span>SmartCart</span></a><p>Advanced full-stack e-commerce showcase for portfolio and internship demos.</p><div class="socials"><a class="icon-btn" href="#">in</a><a class="icon-btn" href="#">X</a><a class="icon-btn" href="#">GH</a></div></div>
+      <div class="footer-links"><strong>Shop</strong><a href="products.html">Products</a><a href="cart.html">Cart</a><a href="checkout.html">Checkout</a></div>
+      <div class="footer-links"><strong>Company</strong><a href="about.html">About</a><a href="contact.html">Contact</a><a href="login.html">Login</a></div>
+      <div class="footer-links"><strong>Account</strong><a href="login.html">Login</a><a href="signup.html">Create account</a></div>
+    </div>
+  </footer>
+  <button class="icon-btn back-top" data-back-top>&uarr;</button><div class="modal" data-modal></div>
+  <script src="js/api.js"></script><script src="js/app.js"></script><script src="js/cart.js"></script><script src="js/products.js"></script><script src="js/animations.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | SmartCart</title>
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <header class="navbar"><div class="container nav-inner"><a class="brand" href="index.html"><img class="brand-logo" src="assets/logo.svg" alt="SmartCart logo"><span>SmartCart</span></a><nav class="nav-links"><a href="index.html">Home</a><a href="products.html">Products</a><a href="cart.html">Cart</a></nav><div class="nav-actions"><button class="icon-btn" data-theme-toggle title="Toggle theme">&#9680;</button><a class="icon-btn" href="cart.html" title="Cart">&#128722;<span class="cart-count" data-cart-count>0</span></a><button class="icon-btn hamburger" data-nav-toggle title="Menu">&#9776;</button></div></div></header>
+  <main data-checkout-result>
+    <section class="page-hero"><div class="container"><span class="eyebrow reveal">Secure checkout</span><h1 class="reveal">Complete your order</h1><p class="reveal">Billing, shipping, coupon, payment selection, and animated success state.</p></div></section>
+    <section class="section-tight"><div class="container checkout-layout">
+      <form class="checkout-panel checkout-form" data-checkout-form>
+        <h2>Billing and shipping</h2>
+        <input class="field" placeholder="Full name" required><input class="field" type="email" placeholder="Email address" required><input class="field" placeholder="Street address" required>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><input class="field" placeholder="City" required><input class="field" placeholder="ZIP / Postal code" required></div>
+        <select class="select" required><option>Credit card</option><option>UPI</option><option>PayPal</option><option>Cash on delivery</option></select>
+        <input class="field" placeholder="Coupon code">
+        <button class="btn" type="submit">Place order</button>
+      </form>
+      <aside class="checkout-panel"><h2>Order summary</h2><div data-cart-summary></div><p class="muted">No real payment is processed. This checkout is built for demo and integration readiness.</p></aside>
+    </div></section>
+  </main>
+  <script src="js/api.js"></script><script src="js/app.js"></script><script src="js/cart.js"></script><script src="js/animations.js"></script>
+</body>
+</html>
+
+
+
